@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Além do PUE: A Nova Fronteira da Sustentabilidade em Data Centers - Uma Análise do Cenário Global e Brasileiro">
+    <meta name="keywords" content="PUE, WUE, CUE, Data Centers, Sustentabilidade, Eficiência Energética, Brasil">
+    <meta name="author" content="NotebookLM">
+    <title>Além do PUE: A Nova Fronteira da Sustentabilidade em Data Centers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                    <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                    <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+                <span>Data Center Sustainability</span>
+            </div>
+            <div class="nav-links">
+                <a href="#slide-1">Início</a>
+                <a href="#slide-3">Métricas</a>
+                <a href="#slide-7">Benchmarks</a>
+                <a href="#slide-10">Brasil</a>
+                <a href="#slide-14">Síntese</a>
+            </div>
+            <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#slide-1">Início</a>
+        <a href="#slide-3">Métricas</a>
+        <a href="#slide-7">Benchmarks</a>
+        <a href="#slide-10">Brasil</a>
+        <a href="#slide-14">Síntese</a>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <main>
+        <!-- Slide 1: Title -->
+        <section class="slide slide-hero" id="slide-1">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-pattern"></div>
+            </div>
+            <div class="slide-content hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    Análise Técnica 2024
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    Além do PUE:<br>
+                    <span class="hero-highlight">A Nova Fronteira da Sustentabilidade</span><br>
+                    em Data Centers
+                </h1>
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    Uma Análise do Cenário Global e Brasileiro
+                </p>
+                <div class="hero-source animate-fade-up delay-3">
+                    <span class="source-label">Fonte:</span> Notebook LM
+                </div>
+                <a href="#slide-2" class="hero-scroll animate-fade-up delay-4">
+                    <span>Explorar</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Slide 2: A Pegada Física do Mundo Digital -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">A Pegada Física do Mundo Digital</h2>
+                </div>
+                <p class="section-intro">
+                    A "nuvem" não é etérea. Ela é sustentada por uma infraestrutura global massiva que consome uma quantidade crescente de recursos vitais do planeta. Entender essa escala é o primeiro passo para uma gestão eficiente.
+                </p>
+                <div class="cards-grid cols-3">
+                    <div class="impact-card animate-on-scroll">
+                        <div class="impact-icon energy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h3>Consumo de Energia</h3>
+                        <p>Data centers já respondem por uma parcela significativa do consumo global de eletricidade, e a demanda continua a crescer exponencialmente.</p>
+                    </div>
+                    <div class="impact-card animate-on-scroll delay-1">
+                        <div class="impact-icon water">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                        </div>
+                        <h3>Consumo de Água</h3>
+                        <p>Um único data center hyperscale pode consumir em média <strong>2,1 milhões de litros de água por dia</strong> — o equivalente a <strong>760 milhões de litros por ano</strong>.</p>
+                    </div>
+                    <div class="impact-card animate-on-scroll delay-2">
+                        <div class="impact-icon carbon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>Emissões de Carbono</h3>
+                        <p>O impacto ambiental vai além do consumo direto, abrangendo a pegada de carbono da energia utilizada e da cadeia de suprimentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: A Trindade da Eficiência -->
+        <section class="slide slide-alt" id="slide-3">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">A Trindade da Eficiência: As Métricas que Definem a Sustentabilidade</h2>
+                </div>
+                <p class="section-intro">
+                    Para gerenciar um impacto tão grande, a indústria desenvolveu um conjunto de métricas-chave. Cada uma oferece uma perspectiva única sobre a eficiência operacional. Juntas, elas formam o pilar da estratégia de sustentabilidade.
+                </p>
+                <div class="metrics-showcase">
+                    <div class="metric-card pue animate-on-scroll">
+                        <div class="metric-header">
+                            <span class="metric-label">PUE</span>
+                            <span class="metric-full">Power Usage Effectiveness</span>
+                        </div>
+                        <p>Mede a eficiência no uso de energia. É o pilar fundamental e a métrica mais conhecida.</p>
+                        <div class="metric-indicator">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="metric-card wue animate-on-scroll delay-1">
+                        <div class="metric-header">
+                            <span class="metric-label">WUE</span>
+                            <span class="metric-full">Water Usage Effectiveness</span>
+                        </div>
+                        <p>Mede a eficiência no uso de água, um recurso cada vez mais crítico e um fator de risco operacional.</p>
+                        <div class="metric-indicator">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="metric-card cue animate-on-scroll delay-2">
+                        <div class="metric-header">
+                            <span class="metric-label">CUE</span>
+                            <span class="metric-full">Carbon Usage Effectiveness</span>
+                        </div>
+                        <p>Mede a intensidade de carbono da energia consumida, conectando a eficiência operacional à fonte da energia.</p>
+                        <div class="metric-indicator">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 12h8M12 8v8"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Decodificando o PUE -->
+        <section class="slide" id="slide-4">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">O Pilar Fundamental: Decodificando o PUE</h2>
+                    <span class="section-badge">(Power Usage Effectiveness)</span>
+                </div>
+                <p class="section-intro">
+                    O PUE é a relação entre a energia total consumida pelo data center e a energia efetivamente entregue aos equipamentos de TI.
+                </p>
+                <div class="formula-box animate-on-scroll">
+                    <div class="formula">
+                        <span class="formula-label">PUE</span>
+                        <span class="formula-equals">=</span>
+                        <div class="formula-fraction">
+                            <span class="formula-numerator">Energia Total da Instalação</span>
+                            <span class="formula-denominator">Energia dos Equipamentos de TI</span>
+                        </div>
+                    </div>
+                    <div class="formula-target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                        <span><strong>Meta:</strong> O valor ideal é 1.0. Quanto mais próximo de 1.0, mais eficiente é a instalação.</span>
+                    </div>
+                </div>
+                <div class="pue-breakdown">
+                    <div class="energy-types animate-on-scroll delay-1">
+                        <div class="energy-type productive">
+                            <h4>Energia de TI</h4>
+                            <span class="energy-label">(Produtiva)</span>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                    Servidores
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                    </svg>
+                                    Armazenamento
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                                        <rect x="9" y="9" width="6" height="6"/>
+                                        <line x1="9" y1="1" x2="9" y2="4"/>
+                                        <line x1="15" y1="1" x2="15" y2="4"/>
+                                        <line x1="9" y1="20" x2="9" y2="23"/>
+                                        <line x1="15" y1="20" x2="15" y2="23"/>
+                                        <line x1="20" y1="9" x2="23" y2="9"/>
+                                        <line x1="20" y1="14" x2="23" y2="14"/>
+                                        <line x1="1" y1="9" x2="4" y2="9"/>
+                                        <line x1="1" y1="14" x2="4" y2="14"/>
+                                    </svg>
+                                    Equipamentos de Rede
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="energy-type overhead">
+                            <h4>Energia de Infraestrutura</h4>
+                            <span class="energy-label">(Overhead)</span>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                                    </svg>
+                                    Sistemas de Refrigeração
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="5"/>
+                                        <line x1="12" y1="1" x2="12" y2="3"/>
+                                        <line x1="12" y1="21" x2="12" y2="23"/>
+                                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                        <line x1="1" y1="12" x2="3" y2="12"/>
+                                        <line x1="21" y1="12" x2="23" y2="12"/>
+                                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                                    </svg>
+                                    Iluminação
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
+                                        <line x1="12" y1="2" x2="12" y2="12"/>
+                                    </svg>
+                                    Perdas em No-breaks (UPS)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="measurement-levels animate-on-scroll delay-2">
+                    <h4>A precisão do PUE depende de onde se mede:</h4>
+                    <div class="levels-grid">
+                        <div class="level">
+                            <span class="level-number">1</span>
+                            <div class="level-content">
+                                <strong>Nível 1 (Básico)</strong>
+                                <span>Medição na saída do UPS.</span>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <span class="level-number">2</span>
+                            <div class="level-content">
+                                <strong>Nível 2 (Intermediário)</strong>
+                                <span>Medição na saída dos PDUs.</span>
+                            </div>
+                        </div>
+                        <div class="level">
+                            <span class="level-number">3</span>
+                            <div class="level-content">
+                                <strong>Nível 3 (Avançado)</strong>
+                                <span>Medição na entrada do próprio equipamento de TI (a mais precisa).</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: WUE -->
+        <section class="slide slide-alt" id="slide-5">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">O Recurso Crítico: A Ascensão do WUE</h2>
+                    <span class="section-badge">(Water Usage Effectiveness)</span>
+                </div>
+                <p class="section-intro">
+                    O WUE mede a eficiência do uso da água, principalmente para refrigeração, em relação à energia consumida pelos equipamentos de TI.
+                </p>
+                <div class="formula-box water animate-on-scroll">
+                    <div class="formula">
+                        <span class="formula-label">WUE</span>
+                        <span class="formula-equals">=</span>
+                        <div class="formula-fraction">
+                            <span class="formula-numerator">Uso Anual de Água (Litros)</span>
+                            <span class="formula-denominator">Energia dos Equipamentos de TI (kWh)</span>
+                        </div>
+                    </div>
+                    <div class="formula-target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <span><strong>Meta:</strong> Quanto menor o valor, mais eficiente é o uso da água.</span>
+                    </div>
+                </div>
+                <div class="wue-explanation animate-on-scroll delay-1">
+                    <div class="wue-importance">
+                        <h4>Por que a água é crucial?</h4>
+                        <p>Sistemas de refrigeração evaporativa, essenciais para grandes instalações, consomem enormes volumes de água. A crescente escassez hídrica em diversas regiões torna a gestão da água um fator de <strong>resiliência</strong> e <strong>licença social para operar</strong>.</p>
+                    </div>
+                    <div class="wue-benchmark">
+                        <div class="benchmark-value">
+                            <span class="value">1.80</span>
+                            <span class="unit">L/kWh</span>
+                        </div>
+                        <span class="benchmark-label">Média da indústria</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: CUE e Certificações -->
+        <section class="slide" id="slide-6">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">A Perspectiva do Carbono: CUE e o Ecossistema de Certificações</h2>
+                </div>
+                <div class="split-content">
+                    <div class="cue-focus animate-on-scroll">
+                        <h3>Foco no CUE <span>(Carbon Usage Effectiveness)</span></h3>
+                        <p>Mede a quantidade de emissões de dióxido de carbono (em kg de CO₂ equivalente) por kWh consumido pelos equipamentos de TI.</p>
+                        <div class="formula-box carbon small">
+                            <div class="formula">
+                                <span class="formula-label">CUE</span>
+                                <span class="formula-equals">=</span>
+                                <div class="formula-fraction">
+                                    <span class="formula-numerator">Emissões de CO₂eq</span>
+                                    <span class="formula-denominator">Energia dos Equipamentos de TI (kWh)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cue-note">Embora menos comum, o CUE é a métrica que conecta diretamente a operação do data center ao seu impacto climático, dependendo fundamentalmente da <strong>matriz energética da sua localização</strong>.</p>
+                    </div>
+                    <div class="certifications animate-on-scroll delay-1">
+                        <h3>A sustentabilidade é um ecossistema.</h3>
+                        <div class="cert-cards">
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                </div>
+                                <h4>I-REC</h4>
+                                <span>Certificação de Energia Renovável</span>
+                                <p>Mecanismos que certificam a compra de energia de fontes limpas, embora não garantam o consumo 24/7 de energia renovável.</p>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                    </svg>
+                                </div>
+                                <h4>Uptime Institute TIER</h4>
+                                <span>Resiliência e Design</span>
+                                <p>Padrões que garantem resiliência e boas práticas de design, que indiretamente impactam a eficiência.</p>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10 9 9 9 8 9"/>
+                                    </svg>
+                                </div>
+                                <h4>ANSI/TIA-942</h4>
+                                <span>Design Abrangente</span>
+                                <p>Padrão abrangente para o design de data centers, cobrindo infraestrutura e resiliência.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: PUE dos Hyperscalers -->
+        <section class="slide slide-dark" id="slide-7">
+            <div class="slide-content">
+                <div class="section-header light">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">O Pódio da Eficiência: O PUE dos Hyperscalers Globais</h2>
+                </div>
+                <p class="section-intro light">
+                    Os gigantes da tecnologia operam com níveis de eficiência energética muito superiores à média da indústria, estabelecendo o padrão ouro para o setor.
+                </p>
+                <div class="pue-ranking animate-on-scroll">
+                    <h3>PUE Médio Anual</h3>
+                    <div class="ranking-bars">
+                        <div class="ranking-item leader">
+                            <div class="rank-info">
+                                <span class="rank-position">1º</span>
+                                <span class="rank-company">Meta Platforms</span>
+                            </div>
+                            <div class="rank-bar-container">
+                                <div class="rank-bar" style="--bar-width: 92%;"></div>
+                            </div>
+                            <span class="rank-value">1.08</span>
+                        </div>
+                        <div class="ranking-item">
+                            <div class="rank-info">
+                                <span class="rank-position">2º</span>
+                                <span class="rank-company">Google</span>
+                            </div>
+                            <div class="rank-bar-container">
+                                <div class="rank-bar" style="--bar-width: 90%;"></div>
+                            </div>
+                            <span class="rank-value">1.10</span>
+                        </div>
+                        <div class="ranking-item">
+                            <div class="rank-info">
+                                <span class="rank-position">3º</span>
+                                <span class="rank-company">Microsoft</span>
+                            </div>
+                            <div class="rank-bar-container">
+                                <div class="rank-bar" style="--bar-width: 82%;"></div>
+                            </div>
+                            <span class="rank-value">1.18</span>
+                        </div>
+                        <div class="ranking-item">
+                            <div class="rank-info">
+                                <span class="rank-position">4º</span>
+                                <span class="rank-company">Alibaba</span>
+                            </div>
+                            <div class="rank-bar-container">
+                                <div class="rank-bar" style="--bar-width: 78%;"></div>
+                            </div>
+                            <span class="rank-value">1.22</span>
+                        </div>
+                        <div class="ranking-item average">
+                            <div class="rank-info">
+                                <span class="rank-position">—</span>
+                                <span class="rank-company">Média da Indústria</span>
+                            </div>
+                            <div class="rank-bar-container">
+                                <div class="rank-bar" style="--bar-width: 42%;"></div>
+                            </div>
+                            <span class="rank-value">1.58</span>
+                        </div>
+                    </div>
+                    <p class="ranking-source">(Uptime Institute)</p>
+                </div>
+                <div class="efficiency-factors animate-on-scroll delay-1">
+                    <p>Essa eficiência é resultado de <strong>design otimizado em escala massiva</strong>, <strong>P&D em refrigeração</strong>, <strong>uso de IA para gestão de cargas</strong> e <strong>localização estratégica em climas mais frios</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: WUE e Water Positive -->
+        <section class="slide" id="slide-8">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">07</span>
+                    <h2 class="section-title">A Batalha pela Água: WUE e os Compromissos 'Water Positive'</h2>
+                </div>
+                <p class="section-intro">
+                    A gestão da água tornou-se uma prioridade estratégica, com os líderes competindo em eficiência e prometendo devolver ao meio ambiente mais água do que consomem.
+                </p>
+                <div class="wue-comparison animate-on-scroll">
+                    <div class="wue-chart">
+                        <h4>WUE (L/kWh)</h4>
+                        <div class="wue-bars">
+                            <div class="wue-bar-item best">
+                                <span class="wue-company">Scaleway</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 5%;"></div>
+                                </div>
+                                <span class="wue-value">0.00 - 0.20</span>
+                            </div>
+                            <div class="wue-bar-item">
+                                <span class="wue-company">AWS</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 10%;"></div>
+                                </div>
+                                <span class="wue-value">0.19</span>
+                            </div>
+                            <div class="wue-bar-item">
+                                <span class="wue-company">Meta</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 11%;"></div>
+                                </div>
+                                <span class="wue-value">0.20</span>
+                            </div>
+                            <div class="wue-bar-item">
+                                <span class="wue-company">OVH</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 14%;"></div>
+                                </div>
+                                <span class="wue-value">0.26</span>
+                            </div>
+                            <div class="wue-bar-item">
+                                <span class="wue-company">Microsoft</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 27%;"></div>
+                                </div>
+                                <span class="wue-value">0.49</span>
+                            </div>
+                            <div class="wue-bar-item average">
+                                <span class="wue-company">Média EUA (DoE)</span>
+                                <div class="wue-bar-track">
+                                    <div class="wue-bar-fill" style="--wue-width: 100%;"></div>
+                                </div>
+                                <span class="wue-value">1.80</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-positive animate-on-scroll delay-1">
+                        <div class="wp-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                            <h4>O Compromisso 'Water Positive by 2030'</h4>
+                        </div>
+                        <p><strong>AWS, Google, Microsoft e Meta</strong> se comprometeram a serem "water positive" até 2030.</p>
+                        <div class="wp-meaning">
+                            <strong>O que significa?</strong>
+                            <p>A meta é retornar mais água para as comunidades e o meio ambiente (através de projetos de reabastecimento) do que a consumida em suas operações diretas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Analisando o Discurso -->
+        <section class="slide slide-alt" id="slide-9">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">08</span>
+                    <h2 class="section-title">Entre a Realidade e Retórica: Analisando o Discurso de Sustentabilidade</h2>
+                </div>
+                <p class="section-intro">
+                    Os números de eficiência são impressionantes, mas os compromissos de sustentabilidade exigem um olhar crítico. A terminologia pode ser vaga e as metodologias de contabilidade variam.
+                </p>
+                <div class="terminology-grid animate-on-scroll">
+                    <div class="term-card neutral">
+                        <div class="term-header">
+                            <span class="term-label">Carbon Neutral</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <p>Geralmente significa compensar emissões com a compra de créditos de carbono, cuja eficácia é frequentemente debatida.</p>
+                    </div>
+                    <div class="term-card renewable">
+                        <div class="term-header">
+                            <span class="term-label">100% Renewable</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <p>Muitas vezes se refere a uma contabilidade baseada no mercado (market-based), onde a empresa compra uma quantidade de energia renovável equivalente ao seu consumo anual, mas não necessariamente consome energia limpa 24/7 em suas instalações (location-based).</p>
+                    </div>
+                    <div class="term-card netzero">
+                        <div class="term-header">
+                            <span class="term-label">Net-Zero Carbon</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <p>Um compromisso mais rigoroso de reduzir as emissões ao mínimo e neutralizar o restante, mas a definição e o escopo podem variar.</p>
+                    </div>
+                </div>
+                <div class="key-question animate-on-scroll delay-1">
+                    <div class="question-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <div class="question-content">
+                        <h4>A Questão Chave</h4>
+                        <p>O impacto real depende da <strong>descarbonização da rede elétrica local</strong> onde o data center opera.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: Brasil -->
+        <section class="slide slide-brazil" id="slide-10">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">09</span>
+                    <h2 class="section-title">Aterrissando no Brasil: Vantagens Competitivas e Desafios Estruturais</h2>
+                </div>
+                <div class="brazil-grid">
+                    <div class="brazil-column advantages animate-on-scroll">
+                        <div class="column-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                <polyline points="17 6 23 6 23 12"/>
+                            </svg>
+                            <h3>Vantagens Estratégicas</h3>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="adv-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                            <div class="adv-content">
+                                <h4>Matriz Energética Limpa</h4>
+                                <p>Com mais de <strong>80% de fontes renováveis</strong>, o Brasil tem uma vantagem inerente para alcançar um CUE baixo. A sustentabilidade energética é um trunfo natural.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="adv-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <div class="adv-content">
+                                <h4>Polo de Inovação</h4>
+                                <p>O país não é apenas consumidor; existem focos de inovação em hardware e soluções de eficiência, como veremos a seguir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brazil-column challenges animate-on-scroll delay-1">
+                        <div class="column-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                            <h3>Desafios Locais</h3>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Falta de Padronização</h4>
+                            <p>Não há uma classificação de porte de data center universalmente aceita no mercado local, dificultando benchmarks e regulamentação.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Carência de Fabricantes</h4>
+                            <p>Há uma escassez de fabricantes nacionais especializados em sistemas de refrigeração de alta eficiência para data centers.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Maturidade das Métricas</h4>
+                            <p>A medição de WUE ainda é incipiente, especialmente em data centers de pequeno e médio porte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brazil-highlight animate-on-scroll delay-2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    <p>No Brasil, o <strong>CUE deveria ser prioridade</strong>, dado que nossa matriz elétrica é majoritariamente limpa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: Classificação por Porte -->
+        <section class="slide" id="slide-11">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">10</span>
+                    <h2 class="section-title">Decifrando o Porte: Uma Classificação Prática para o Mercado Brasileiro</h2>
+                </div>
+                <p class="section-intro">
+                    Diante da falta de um padrão universal, a potência elétrica (MW) surge como o critério mais relevante para classificação, pois é o principal fator de custo. Apresentamos um modelo de referência prático adotado no setor.
+                </p>
+                <div class="classification-table animate-on-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Porte do Data Center</th>
+                                <th>Parâmetros Indicativos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="size-badge micro">Micro Edge</span></td>
+                                <td>Até 100 kW</td>
+                            </tr>
+                            <tr>
+                                <td><span class="size-badge edge">Edge</span></td>
+                                <td>50 kVA a 500 kVA (até ~30 racks)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="size-badge regional">Regional</span></td>
+                                <td>20 a 80 racks (até 2 MW)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="size-badge medium">Médio Porte</span></td>
+                                <td>~400 racks (≈ 10 MW)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="size-badge large">Grande Porte</span></td>
+                                <td>Acima desses valores</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tech-notes animate-on-scroll delay-1">
+                    <h4>Observações Técnicas</h4>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            A densidade típica em hyperscale é de <strong>4-5 kVA por rack</strong>.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Potências acima de <strong>20 kVA por rack</strong> são consideradas de alta densidade.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Em data centers de pequeno porte, a medição formal de WUE ainda não é uma prática comum.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: Inovação no Brasil -->
+        <section class="slide slide-alt" id="slide-12">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">11</span>
+                    <h2 class="section-title">Epicentros de Inovação: Soluções e Oportunidades no Brasil</h2>
+                </div>
+                <p class="section-intro">
+                    O cenário brasileiro, com seus desafios e vantagens, fomenta soluções únicas e abre caminho para novas tecnologias de eficiência.
+                </p>
+                <div class="innovation-grid animate-on-scroll">
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                            </svg>
+                        </div>
+                        <h4>Hardware e Refrigeração</h4>
+                        <p>Desenvolvimento de patentes locais para liquid cooling, como o radiador da <strong>CloudVBOX em São Paulo</strong>.</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                            </svg>
+                        </div>
+                        <h4>Novas Fontes de Energia</h4>
+                        <p>Discussões ativas sobre o uso de <strong>geradores a hidrogênio</strong> como alternativa para energia de backup.</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h4>Gestão Inteligente de Energia</h4>
+                        <p>Estratégias como captar energia em horários de menor custo para resfriar água e utilizá-la nos horários de pico.</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h4>Data Centers como Laboratórios</h4>
+                        <p>Utilização de infraestruturas como campo de prova para <strong>experimentação de novas tecnologias</strong> energéticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: Checklist Estratégico -->
+        <section class="slide" id="slide-13">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number">12</span>
+                    <h2 class="section-title">Checklist Estratégico: Ações para Otimizar a Eficiência Agora</h2>
+                </div>
+                <p class="section-intro">
+                    Melhorar o PUE e a sustentabilidade geral é um processo contínuo que combina design inteligente, tecnologia e boas práticas operacionais.
+                </p>
+                <div class="checklist-grid animate-on-scroll">
+                    <div class="checklist-item">
+                        <div class="checklist-number">1</div>
+                        <div class="checklist-content">
+                            <h4>Otimizar o Fluxo de Ar</h4>
+                            <p>Implementar contenção de corredores quentes/frios e usar painéis de vedação (blanking panels) em racks vazios.</p>
+                        </div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-number">2</div>
+                        <div class="checklist-content">
+                            <h4>Otimizar a Refrigeração</h4>
+                            <p>Usar drives de velocidade variável (VSDs) em ventiladores e bombas; e explorar free cooling onde o clima permite.</p>
+                        </div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-number">3</div>
+                        <div class="checklist-content">
+                            <h4>Modernizar o Hardware</h4>
+                            <p>Substituir equipamentos de TI antigos por modelos mais eficientes (maior performance por watt).</p>
+                        </div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-number">4</div>
+                        <div class="checklist-content">
+                            <h4>Ajustar a Temperatura</h4>
+                            <p>Operar o data center em temperaturas ligeiramente mais altas, dentro das diretrizes seguras da ASHRAE, para reduzir drasticamente o consumo de refrigeração.</p>
+                        </div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-number">5</div>
+                        <div class="checklist-content">
+                            <h4>Virtualizar e Consolidar</h4>
+                            <p>Reduzir o número de servidores físicos consolidando cargas de trabalho em máquinas virtuais.</p>
+                        </div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-number">6</div>
+                        <div class="checklist-content">
+                            <h4>Medir para Gerenciar</h4>
+                            <p>Implementar um sistema de medição robusto (DCIM) para calcular PUE, WUE e outros indicadores de forma contínua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: Síntese Estratégica -->
+        <section class="slide slide-synthesis" id="slide-14">
+            <div class="slide-content">
+                <div class="section-header light">
+                    <span class="section-number">13</span>
+                    <h2 class="section-title">Síntese Estratégica: Quatro Insights para o Futuro dos Data Centers</h2>
+                </div>
+                <div class="insights-grid animate-on-scroll">
+                    <div class="insight-card">
+                        <div class="insight-number">1</div>
+                        <h4>Métricas Essenciais, mas Imperfeitas</h4>
+                        <p>PUE, WUE e CUE são ferramentas indispensáveis, mas é crucial entender suas nuances, metodologias de cálculo e limitações para uma análise precisa.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-number">2</div>
+                        <h4>Líderes Globais Ditadores de Ritmo</h4>
+                        <p>Os hyperscalers definem o benchmark de eficiência, mas seu discurso de marketing sobre sustentabilidade deve ser analisado criticamente, separando o progresso real da retórica.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-number">3</div>
+                        <h4>O Cenário Único do Brasil</h4>
+                        <p>A matriz energética limpa é um trunfo estratégico que coloca o CUE em destaque. No entanto, desafios como a padronização e o desenvolvimento da cadeia de suprimentos local precisam ser superados.</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-number">4</div>
+                        <h4>Eficiência é Estratégia, Não Apenas Custo</h4>
+                        <p>Em um mundo de recursos limitados e crescente escrutínio, a sustentabilidade não é mais apenas sobre reduzir a conta de energia. É sobre resiliência operacional, vantagem competitiva e licença para crescer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 15: Fechamento -->
+        <section class="slide slide-closing" id="slide-15">
+            <div class="slide-content closing-content">
+                <div class="closing-main animate-on-scroll">
+                    <h2>Construindo a infraestrutura digital do futuro.</h2>
+                    <p class="closing-highlight">De forma sustentável.</p>
+                </div>
+                <div class="closing-contact animate-on-scroll delay-1">
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span>Nome da Empresa/Autor</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                            <span>Website</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>E-mail de Contato</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <span>Perfil do LinkedIn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="closing-source">
+                    <span>Fonte: Notebook LM</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
