@@ -11,7 +11,7 @@ const base = "/datacenter/";
 export default defineConfig(({ mode }) => ({
   // Use "/" em desenvolvimento para o npm run dev funcionar, 
   // e "/datacenter/" no build para o Netlify.
-  base: mode === "development" ? "/" : "/datacenter/",
+ base: mode === "development" ? "/" : base,
   
   server: {
     host: "::",
