@@ -1,0 +1,2 @@
+/datacenter    https://apresentacao-datacenter.netlify.app/  200!
+/datacenter/* https://apresentacao-datacenter.netlify.app/:splat  200!
