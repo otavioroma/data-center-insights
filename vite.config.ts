@@ -5,11 +5,14 @@ import { componentTagger } from "lovable-tagger";
 
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1];
 const isUserPage = repoName?.endsWith(".github.io");
-const base = isUserPage ? "/" : repoName ? `/${repoName}/` : "/";
+const base = "/datacenter/";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Use "/" em desenvolvimento para o npm run dev funcionar, 
+  // e "/datacenter/" no build para o Netlify.
   base: mode === "development" ? "/" : base,
+  
   server: {
     host: "::",
     port: 8080,
